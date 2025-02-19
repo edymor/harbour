@@ -1,0 +1,186 @@
+
+ 
+  MIRO 3.0 - DOCUMENTA─▌O DO SISTEMA
+  дддддддддддддддддддддддддддддддддд
+ 
+  SISTEMA : AGEND
+  TITULO  : Agenda de Telefone                                                              
+ 
+ 
+  ARQUIVOS
+  мммммммм
+ 
+  AREA      : 1
+  ARQUIVO   : AGENDA.DBF
+  DESCRICAO : Agenda de Telefones   
+ 
+  CAMPO       TIPO      TAMANHO  DECIMAIS  DESCRICAO
+  дддддддддд  дддддддд  ддддддд  дддддддд  ддддддддддддддддддддддддддддддддддд
+  SEQ_CODIGO  CARACTER       10         0  Id Sequencia                       
+  NOME        CARACTER       40         0  Nome Completo                      
+  CPF         CARACTER       11         0  CPF                                
+  CELULAR     CARACTER       11         0  Celular                            
+  NOMECONTAT  CARACTER       20         0  Pessoa Contato                     
+  CELULAR1    CARACTER       11         0  Celular                            
+  OBSERVACAO  MEMO           10         0  Observacoes                        
+ 
+  INDICE    : AGEND001.NTX
+  EXPRESSAO : CELULAR
+  ORDEM     : 1
+ 
+  INDICE    : AGEND002.NTX
+  EXPRESSAO : CPF
+  ORDEM     : 2
+ 
+  INDICE    : AGEND003.NTX
+  EXPRESSAO : NOMECONTAT
+  ORDEM     : 3
+ 
+  INDICE    : AGEND004.NTX
+  EXPRESSAO : SEQ_CODIGO
+  ORDEM     : 4
+  дддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+ 
+ 
+ 
+ 
+  SISTEMA AGEND - MODULOS (PRG)
+  ммммммммммммммммммммммммммммм
+ 
+  зддддддддддддддддбддддддддддддддддддддддддддддддд©
+  Ё     Modulo     Ё           Descricao           Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGEND.PRG      Ё Modulo principal              Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDfu1.PRG   Ё Modulo de funcoes - Parte I   Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDfu2.PRG   Ё Modulo de funcoes - Parte II  Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDfu3.PRG   Ё Modulo de funcoes - Parte III Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDarq.PRG   Ё Rotina de criacao de arquivos Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDsos.PRG   Ё Rotinas de help               Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDinc.PRG   Ё Menu de cadastros             Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDi01.PRG   Ё Agenda                        Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDcon.PRG   Ё Menu de manuten┤■es           Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDc01.PRG   Ё Consulta por Codigo           Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDc02.PRG   Ё Consulta por CPF              Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDc03.PRG   Ё Consulta por Nome             Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDc04.PRG   Ё Consulta por Celular          Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDc05.PRG   Ё Consulta por Contato          Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDrel.PRG   Ё Menu de relatorios            Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDr01.PRG   Ё Por Codigo                    Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDr02.PRG   Ё Por Cpf                       Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDr03.PRG   Ё Por Nome                      Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDr04.PRG   Ё Por Celular                   Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё AGENDr05.PRG   Ё Por Contato                   Ё
+  юддддддддддддддддаддддддддддддддддддддддддддддддды
+ 
+ 
+ 
+  CONFIGURACAO DO SISTEMA
+  ммммммммммммммммммммммм
+ 
+- Linguagem
+ 
+  здддбдддддддддддддд©  здддбддддддддддддд©
+  Ё Ш Ё Clipper 5.01 Ё  Ё   Ё Clipper 5.2 Ё
+  юдддадддддддддддддды  юдддаддддддддддддды
+ 
+ 
+- Tratamento de arquivos
+ 
+  здддбддддддддддддд©  здддбдддддддддддддд©
+  Ё   Ё Monousuario Ё  Ё Ш Ё Multiusuario Ё
+  юдддаддддддддддддды  юдддадддддддддддддды
+ 
+ 
+- Endentacao 
+ 
+  здддддддддддд©
+  Ё 03 Colunas Ё
+  юдддддддддддды
+ 
+ 
+- Visualizar blocos
+ 
+  здддбддддд©  здддбддддд©
+  Ё Ш Ё Sim Ё  Ё   Ё N└o Ё
+  юдддаддддды  юдддаддддды
+ 
+ 
+- Comentarios
+ 
+  здддбддддд©  здддбддддд©
+  Ё Ш Ё Sim Ё  Ё   Ё N└o Ё
+  юдддаддддды  юдддаддддды
+ 
+ 
+- Rotinas
+ 
+  здддбддддддддддддддддддддддддддддддд©
+  Ё Ш Ё Calendario                    Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Calculadora                   Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Senhas de acesso              Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Help                          Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Back-up                       Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Dos shell                     Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Atualizacao de data           Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Criacao de arquivos           Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Sombras                       Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Mouse                         Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Papel de parede               Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Configuracao de cores         Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Gerador de relatorios         Ё
+  юдддаддддддддддддддддддддддддддддддды
+ 
+ 
+- Cores do sistema
+ 
+  здддддддддддддддддддддддбддддддддддбдддддддддддддддддддддддддддддддд©
+  Ё     Especificacao     Ё Setcolor Ё      Descricao das cores       Ё
+  цдддддддддддддддддддддддеддддддддддедддддддддддддддддддддддддддддддд╢
+  Ё  Fundo da tela        Ё    B+/B  Ё  Azul Brilhante / Azul         Ё
+  Ё  Menu                 Ё     N/W  Ё  Preto / Branco                Ё
+  Ё  Destaque do menu     Ё    W+/R  Ё  Branco Brilhante / Vermelho   Ё
+  Ё  Janela de dialogo    Ё     W/B  Ё  Branco / Azul                 Ё
+  Ё  Box janela de dialogoЁ    N/BG  Ё  Preto / Cyan                  Ё
+  Ё  Botoes               Ё     B/W  Ё  Azul / Branco                 Ё
+  Ё  Botao em destaque    Ё    W+/W  Ё  Branco Brilhante / Branco     Ё
+  Ё  Gets                 Ё     N/W  Ё  Preto / Branco                Ё
+  Ё  Get em destaque      Ё    W+/R  Ё  Branco Brilhante / Vermelho   Ё
+  Ё  Tela de apresenta┤└o Ё    W+/B  Ё  Branco Brilhante / Azul       Ё
+  Ё  Caracteres avulsos   Ё     W/B  Ё  Branco / Azul                 Ё
+  Ё  Cercaduras           Ё     W/B  Ё  Branco / Azul                 Ё
+  Ё  T║tulo               Ё    N/BG  Ё  Preto / Cyan                  Ё
+  юдддддддддддддддддддддддаддддддддддадддддддддддддддддддддддддддддддды
+ 
+ 
+/* Final AGEND.DOC */
