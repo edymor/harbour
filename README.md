@@ -1,4 +1,4 @@
-# Welcome to Harbour [![Build Status](https://travis-ci.org/harbour/core.png)](https://travis-ci.org/harbour/core)
+# Welcome to Harbour [![Build Status](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcT6gDYjTS3lkV9BCixlLZF4SBDYyDnBGhBSNbAjG4eu7czzNZ-5QK0koYss429NJZq7ALqLXhG9UL-mSDQKFTu7u6OhLYgriZonXQ_0E147j_i4OwZlP2b0vaepJRHfsLsNstgZbeCKqH/s214/harbour-logo.jpg)](https://github.com/harbour/core)
 
 Harbour is the free software implementation of a multi-platform,
 multi-threading, object-oriented, scriptable programming language,
