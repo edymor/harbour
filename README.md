@@ -1,4 +1,5 @@
-# Atenção: Para Editar os fontes exemplo use o codepage oem 850 tanto no notepad++, quanto no vscode e adicione a extensao Harbour and XHarbour do Antonino Perricone.
+# ⚠️ Atenção!!!  
+Para Editar os fontes exemplo use o codepage oem 850 tanto no notepad++, quanto no vscode, no vscode adicione a extensão Harbour and XHarbour do Antonino Perricone.
 
 # Welcome to Harbour [![Build Status](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcT6gDYjTS3lkV9BCixlLZF4SBDYyDnBGhBSNbAjG4eu7czzNZ-5QK0koYss429NJZq7ALqLXhG9UL-mSDQKFTu7u6OhLYgriZonXQ_0E147j_i4OwZlP2b0vaepJRHfsLsNstgZbeCKqH/s214/harbour-logo.jpg)](https://github.com/harbour/core)
 
