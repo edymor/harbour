@@ -1,0 +1,47 @@
+#
+# Arquivo principal do Projeto
+
+# Informa‡äes gerais
+-info
+
+# Beep ao concluir o Build
+-beep
+
+# Tipo de Saida
+-hbexe
+
+# Tipo de Projeto
+-gui
+
+# GT padrao
+-gtwin
+
+#Arquido da saida 
+-o.\mad
+
+# Compila‡Æo incremental
+-inc
+
+# Apresentar informa‡äes detalhadas sobre os passos executados
+-trace
+
+# Op‡äes do compilador Harbour
+-m -a -w -es2 -z -ql
+
+-b{DEBUG}
+-d_TESTE{DEBUG}
+
+# Op‡äes do compilador C
+-debug{DEBUG}
+
+# Bibliotecas comuns a todos os projetos
+xhb.hbc
+
+# Lista de Fontes
+mad.prg
+madfun.prg
+madinc.prg
+madalt.prg
+madcon.prg
+madexc.prg
+madreor.prg
